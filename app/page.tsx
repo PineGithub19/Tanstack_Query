@@ -3,26 +3,26 @@ import { PostList } from "@/components/PostList";
 import { Sidebar } from "@/components/Sidebar";
 
 export default function Home() {
-  return (
-    <>
-      <header className="blog-header">
-        <div className="blog-header-inner">
-          <span className="blog-logo">
-            mtikcode<span className="blog-logo-accent">.blog</span>
-          </span>
-        </div>
-      </header>
+    return (
+        <>
+            <header className="blog-header">
+                <div className="blog-header-inner">
+                    <span className="blog-logo">
+                        mtikcode<span className="blog-logo-accent">.blog</span>
+                    </span>
+                </div>
+            </header>
 
-      <div className="blog-container">
-        <div className="blog-grid">
-          <main>
-            <CreatePostForm />
-            <PostList paginated />
-          </main>
+            <div className="blog-container">
+                <div className="blog-grid">
+                    <main>
+                        <CreatePostForm />
+                        <PostList />
+                    </main>
 
-          <Sidebar />
-        </div>
-      </div>
-    </>
-  );
+                    <Sidebar />
+                </div>
+            </div>
+        </>
+    );
 }
