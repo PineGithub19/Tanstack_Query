@@ -5,5 +5,6 @@ export function usePosts() {
     return useQuery<PaginatedPosts, Error>({
         queryKey: ["posts", "list"],
         queryFn: () => postsService.getAll(),
+        staleTime: 1000 * 60, // 1 minutes
     });
 }
